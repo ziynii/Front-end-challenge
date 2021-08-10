@@ -1,0 +1,17 @@
+:root {
+	--dark-blue: #1c1d34;
+	--sofr-red: #f47b57;
+	--sofr-violet: #ae67e9;
+	--soft-blue: #6464e6;
+	--dark-grayish-blue: #4a4b5e;
+	--dark-grayish: #777787;
+	--light-gray: #e6e6e9;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+
