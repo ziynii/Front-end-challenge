@@ -9,4 +9,94 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+	background-color: var(--dark-cyan);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bg_pattern {
+	position: absolute;
+}
+
+.top-pattern {
+	transform: translate(-30%, -50%);
+}
+
+.bottom-pattern {
+	transform: translate(100%, -70%);
+}
+
+.user-card {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	align-items: center;
+	background-color: white;
+	border-radius: 8px;
+	margin: 150px 0;
+}
+
+.user-bg {
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+}
+
+.user-ava {
+	border-radius: 50%;
+	border: 5px solid white;
+	transform: translateY(-50px);
+	margin-bottom: -30px;
+}
+
+.user-info {
+	width: 100%;
+	padding-bottom: 30px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+}
+
+.user-name {
+	font-weight: 700;
+}
+
+.user-age {
+	color: var(--grayish-blue);
+}
+
+.user-city {
+	padding-top: 8px;
+	color: var(--grayish-blue);
+}
+
+.stats-wrap {
+	width: 80%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stats {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.number {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.list-name {
+	color: var(--grayish-blue);
+	font-size: 0.7rem;
+	margin-top: 4px;
 }
