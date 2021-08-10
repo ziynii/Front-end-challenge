@@ -1,17 +1,150 @@
 :root {
-	--dark-blue: #1c1d34;
-	--sofr-red: #f47b57;
-	--sofr-violet: #ae67e9;
-	--soft-blue: #6464e6;
-	--dark-grayish-blue: #4a4b5e;
-	--dark-grayish: #777787;
-	--light-gray: #e6e6e9;
+  --dark-blue: #1c1d34;
+  --sofr-red: #f47b57;
+  --sofr-violet: #ae67e9;
+  --soft-blue: #6464e6;
+  --dark-grayish-blue: #4a4b5e;
+  --dark-grayish: #777787;
+  --light-gray: #e6e6e9;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 12px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
 }
 
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+body {
+  background: linear-gradient(#ae67e9, #6464e6);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  width: 80%;
+	height: 70%;
+	overflow: hidden;
+	border-radius: 8px;
+	min-width: 1040px;
+}
+
+.main-img {
+	position: relative;
+}
+
+.faq__backimg {
+  width: 700px;
+	position: absolute;
+	top: -80px;
+	left: -190px;
+}
+
+.desktop {
+	width: 500px;
+	position: absolute;
+	top: 70px;
+	left: -50px;
+}
+
+section {
+  flex-basis: 50%;
+}
+
+.faq {
+  padding: 40px 80px;
+}
+
+.faq__title {
+  font-size: 2.5rem;
+  padding: 2.5rem 0;
+}
+
+.faq-list {
+  list-style: none;
+}
+
+.items {
+  padding: 16px 0;
+	border-bottom: 1px solid var(--light-gray);
+	position: relative;
+}
+
+.faq__arrow {
+  position: absolute;
+  right: 0;
+	top: 26px;
+	cursor: pointer;
+}
+
+.question {
+  font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.question__bold {
+	font-weight: 700;
+}
+
+.question:hover {
+	color: var(--sofr-red);
+}
+
+.answer {
+  margin-top: 8px;
+  color: var(--dark-grayish);
+}
+
+.hidden {
+	display: none;
+}
+
+
+.deg {
+	transform: rotate(180deg);
+}
+
+@media (max-width:768px) {
+
+	body {
+		height: 100%
+	}
+	.container {
+		flex-direction: column;
+		align-items: center;
+		overflow: visible;
+		min-width: 350px;
+		height: 100%;
+		margin: 150px 0
+	}
+
+	.faq {
+		padding: 60px 30px;
+	}
+
+	.faq__title {
+		text-align: center;
+	}
+
+	.faq__backimg {
+		width: 100px;
+		top: -180px;
+		
+	}
+
+	.desktop {
+		width: 300px;
+		left: -150px;
+		top: -140px;	
+	}
+
+	.question {
+		font-size: 1.4rem;
+	}
+}
