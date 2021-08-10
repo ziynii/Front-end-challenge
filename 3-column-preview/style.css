@@ -1,0 +1,10 @@
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+	--right-orange: #e28726;
+	--dark-cyan: #006870;
+	--very-dark-cyan: #004241;
+	--transparent-white: rgba(255,255,255,0.75);
+	--gray: #f2f2f2
+}
