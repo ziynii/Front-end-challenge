@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 40px;
+}
+
+.page-title {
+	font-weight: 100;
+}
+
+.page-title02 {
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+
+.page-text {
+	width: 600px;
+	margin: auto;
+	font-size: 0.9rem;
+	color: hsl(229, 6%, 66%);
+}
+
+.container {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 40px;
+}
+
+.content-box {
+	width: 400px;
+	height: 250px;
+	background-color: white;
+	box-shadow: -1px 5px 15px 5px rgba(0,0,0,0.10);
+	border-radius: 8px;
+	padding: 20px;
+	position: relative;
+}
+
+.text {
+	color: hsl(229, 6%, 66%)
+}
+
+.content-box img {
+	position: absolute;
+	right: 20px;
+	bottom: 20px
+}
+
+.supervisor {
+	border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team {
+	border-top: 5px solid hsl(0, 78%, 62%);
+	margin-bottom: 24px;
+}
+
+.karma {
+	border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calcul {
+	border-top: 5px solid hsl(212, 86%, 64%);
+}
