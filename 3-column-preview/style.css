@@ -2,9 +2,86 @@
 /* font-family: 'Lexend Deca', sans-serif; */
 
 :root {
-	--right-orange: #e28726;
+	--light-orange: #e28726;
 	--dark-cyan: #006870;
 	--very-dark-cyan: #004241;
 	--transparent-white: rgba(255,255,255,0.75);
 	--gray: #f2f2f2
+}
+
+body {
+	background-color: var(--gray);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.section {
+	width: 200px;
+	padding: 40px;
+}
+
+.sedan {
+	background-color: var(--light-orange);
+}
+
+.sedan .learn-btn {
+	color: var(--light-orange);
+}
+
+.suvs {
+	background-color: var(--dark-cyan);
+}
+
+.suvs .learn-btn {
+	color: var(--dark-cyan);
+}
+
+.luxury {
+	background-color: var(--very-dark-cyan);
+}
+
+.luxury .learn-btn {
+	color: var(--very-dark-cyan);
+}
+
+.title {
+	font-family: 'Big Shoulders Display', cursive;
+	color: white;
+	font-size: 36px;
+}
+
+.text {
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--transparent-white);
+	font-size: 0.9rem;
+}
+
+.learn-btn {
+	font-family: 'Lexend Deca', sans-serif;
+	margin-top: 60px;
+	border: 2px solid transparent;
+	outline: none;
+	background-color: white;
+	padding: 12px 24px;
+	border-radius: 20px;
+}
+
+.learn-btn:hover {
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+}
+
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 50px 0
+	}
 }
