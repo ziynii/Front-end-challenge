@@ -27,6 +27,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 80%;
+	max-width: 700px;
 	border-radius: 4px;
 }
 
@@ -104,4 +105,27 @@ body {
 	width: 70%;
 	font-size: 0.7rem;
 	line-height: 1.1rem;
+}
+
+@media (max-width: 768px) {
+
+	.container {
+		max-width: 400px;
+	}
+
+	.subscrip {
+		flex-direction: column;
+	}
+
+	.sub-left {
+		border-radius: 0;
+	}
+
+	.sub-right {
+		border-radius: 0 0 4px 4px;
+	}
+
+	.wht-text {
+		width: 60%;
+	}
 }
