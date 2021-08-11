@@ -1,0 +1,107 @@
+:root {
+	--light-cyan: hsl(179, 45%, 52%);
+	--cyan: hsl(179, 62%, 43%);
+	--light-yellow: hsl(71, 73%, 54%);
+	--light-gray: hsl(204, 43%, 93%);
+	--dark-blue: hsl(218, 22%, 67%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+}
+
+
+body {
+	background-color: var(--light-gray);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	border-radius: 4px;
+}
+
+.join {
+	padding: 30px;
+}
+
+.title {
+	color: var(--cyan);
+}
+
+.title-sub {
+	margin-top: 24px;
+	color: var(--light-yellow);
+}
+
+.join-text {
+	margin-top: 12px;
+	font-size: 0.8rem;
+	color: var(--dark-blue);
+}
+
+.subscrip {
+	display: flex;
+	color: white;
+}
+
+.subscrip > div {
+	flex-basis: 50%;
+	padding: 30px;
+}
+
+.sub-left {
+	background-color: var(--cyan);
+	border-radius: 0 0 0 4px;
+}
+
+.sub-right {
+	background-color: var(--light-cyan);
+	border-radius: 0 0 4px 0;
+}
+
+.text01, .text03 {
+	margin-bottom: 16px;
+}
+
+.price {
+	font-size: 0.9rem;
+	color: lightgray;
+}
+
+.price .accent {
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 700;
+	margin-right: 4px;
+}
+
+.text02 {
+	margin-top: 12px;
+	margin-bottom: 24px;
+	font-size: 0.8rem;
+}
+
+.sign-up {
+	width: 100%;
+	height: 36px;
+	background-color: var(--light-yellow);
+	border: none;
+	border-radius: 4px;
+	color: white;
+}
+
+.wht-text {
+	width: 70%;
+	font-size: 0.7rem;
+	line-height: 1.1rem;
+}
