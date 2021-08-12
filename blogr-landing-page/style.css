@@ -122,6 +122,11 @@ body {
   margin-left: 12px;
 }
 
+.sign-up:hover {
+	background-color: var(--very-light-red);
+	color: var(--white);
+}
+
 .header__text-wrap {
   padding: 40px 0;
   text-align: center;
@@ -153,11 +158,20 @@ body {
 	color: var(--light-red);
 }
 
-
+.free:hover {
+	background-color: var(--very-light-red);
+	color: var(--white);
+	border: 1px solid var(--very-light-red);
+}
 
 .more {
 	background-color: transparent;
 	color: var(--white);
+}
+
+.more:hover {
+	background-color: var(--white);
+	color: var(--very-light-red);
 }
 
 .section {
@@ -267,4 +281,9 @@ body {
 
 .footer__item {
 	margin: 12px 0;
+	cursor: pointer;
+}
+
+.footer__item:hover {
+	text-decoration: underline;
 }
