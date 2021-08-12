@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(230, 100%, 99%);
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  position: absolute;
+  top: 100px;
+}
+
+.container {
+  width: 600px;
+  background-color: white;
+  padding: 24px;
+}
+
+.con-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: hsl(225, 20%, 60%);
+}
+
+.price-accent {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.rage-input {
+  width: 100%;
+  padding: 12px 0;
+}
+
+.switch-button {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+.switch-button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.onoff-switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: hsl(223, 50%, 87%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.onoff-switch:before {
+  position: absolute;
+  content: '';
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.switch-button input:checked + .onoff-switch {
+  background-color: hsl(174, 77%, 80%);
+}
+.switch-button input:checked + .onoff-switch:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.toggle-line {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: hsl(225, 20%, 60%);
+}
+
+.toggle-line > span {
+  margin: 8px;
+}
+
+.discount {
+  display: inline-block;
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.start {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-left img {
+  margin-right: 8px;
+}
+
+.start-item {
+  padding: 4px 0;
+  font-size: 0.9rem;
+  color: hsl(225, 20%, 60%);
+}
+
+.trial {
+  width: 160px;
+  height: 36px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 24px;
+}
+
