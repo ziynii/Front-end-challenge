@@ -1,6 +1,89 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  width: 70%;
+}
+
+.info {
+  flex-basis: 30%;
+  padding: 36px 24px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 8px 80px 4px 4px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.icons {
+  margin-top: 24px;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 4px;
+}
+
+.bar {
+  flex-basis: 60%;
+  height: 100%;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+}
+
+.storage-text {
+  font-size: 0.8rem;
+}
+
+.bar-bg {
+  width: 90%;
+  height: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.bar-con {
+	width: 70%;
+	height: 12px;
+	border-radius: 8px;
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.bar-gb {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
 }
