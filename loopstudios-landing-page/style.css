@@ -1,0 +1,303 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--dark-gray: hsl(0, 0%, 55%);
+	--very-dark-gray: hsl(0, 0%, 41%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.header {
+	background-image: url(./images/desktop/image-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 48px;
+	position: relative;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__menu {
+	display: flex;
+}
+
+.nav__menu-item {
+	padding: 0 8px;
+	color: var(--white);
+	cursor: pointer;
+	position: relative;
+}
+
+.nav__menu-item:hover::after {
+	content: '';
+	width: 40%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+.open-btn, .close-btn {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	right: 24px;
+	top: 56px;
+}
+
+.main-text {
+	margin-top: 120px;
+	border: 1px solid var(--white);
+	color: var(--white);
+	width: 40%;
+	font-size: 3.5rem;
+	padding: 24px;
+}
+
+.mobile-img {
+	display: none;
+}
+
+section {
+	padding: 100px 100px;
+}
+
+.vr {
+	position: relative;
+}
+
+.vr__text-wrap {
+	position: absolute;
+	right: 8px;
+	bottom: 50px;
+	background-color: white;
+	width: 600px;
+	padding: 60px;
+}
+
+.vr__title {
+	font-size: 2.5rem;
+	margin-bottom: 24px;
+}
+
+.vr__text {
+	font-size: 1rem;
+}
+
+.creations {
+	display: flex;
+	flex-direction: column;
+}
+
+.creations__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cre-title {
+	font-size: 2.5rem;
+} 
+
+.all-btn {
+	width: 140px;
+	height: 35px;
+	background-color: var(--white);
+	color: var(--black);
+	border: 2px solid var(--black);
+	cursor: pointer;
+	font-family: 'Alata', sans-serif;
+}
+
+.all-btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.content-wrap {
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.con-item {
+	position: relative;
+}
+.item-text {
+	position: absolute;
+	bottom: 24px;
+	left: 24px;
+	color: var(--white);
+	font-size: 1.8rem;
+}
+
+.footer {
+	padding: 36px 100px;
+	background-color: var(--black);
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+}
+
+.footer-top, .footer-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-top {
+	margin-bottom: 24px;
+}
+
+.footer__logo {
+	width: 150px;
+}
+
+.footer-item {
+	margin-right: 12px;
+	cursor: pointer;
+	position: relative;
+}
+
+.footer-item:hover::after {
+	content: '';
+	width: 40%;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	bottom: -5px;
+	left: 12px;
+}
+
+.sns-icon img {
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.reserved {
+	font-size: 0.8rem;
+	color: var(--dark-gray);
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width:768px) {
+
+	.haeder {
+		position: relative;
+	}
+
+	.logo {
+		position: absolute;
+		top: 54px;
+		left: 24px;
+		z-index: 1;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.toggle-btn .open-btn {
+		display: inline;
+	}
+
+	.mobile-nav-layout {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--black);
+	}
+
+	.nav__menu {
+		margin-left: 24px;
+		margin-top: 140px;
+		flex-direction: column;
+	}
+
+	.nav__menu-item {
+		padding: 8px 0;
+		font-size: 2rem;
+	}
+	
+	.nav__menu-item:hover::after {
+		width: 0;
+	}
+
+	section {
+		padding: 48px 0;
+	}
+
+	.desktop-img {
+		display: none;
+	}
+
+	.mobile-img {
+		display: inline;
+	}
+
+	.main-text {
+		width: 100%;
+		font-size: 4rem;
+	}
+
+	.vr-mobile {
+		width: 100%;
+	}
+
+	.vr__text-wrap {
+		position: relative;
+		padding: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.vr__title {
+		padding: 24px 0;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		font-size: 2.8rem;
+	}
+
+	.vr__text {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.creations__top {
+		flex-direction: column;
+	}
+
+	.all-btn {
+		margin-top: 36px;
+	}
+
+	.mobile-img {
+		width: 100%;
+	}
+
+	.footer {
+		flex-direction: column;
+	}
+
+}
