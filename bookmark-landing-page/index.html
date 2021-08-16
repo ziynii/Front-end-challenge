@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark landing page</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js"></script>
   </head>
   <body>
@@ -24,7 +28,7 @@
     </header>
     <section class="main-page">
       <div class="main-page__text">
-        <h2 class="main-page__title">A Simple Bookmark Manager</h2>
+        <p class="main-page__title">A Simple Bookmark Manager</p>
         <p class="main-page__sub">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
@@ -39,7 +43,7 @@
       </div>
     </section>
     <section class="features">
-      <h2 class="features__title">Features</h2>
+      <p class="features__title">Features</p>
       <p class="features__text-con">
         Our aim is to make it quick and easy for you to access your favourites.
         Your bookmarks sync between your devices so you can access them on the
@@ -47,18 +51,18 @@
       </p>
       <div class="features__tab-menu">
         <ul class="tab-menu__wrap">
-          <li class="tab-menu__btn">
+          <li class="tab-menu__btn tab-active">
             <a href="#simple">Simple Bookmarking</a>
           </li>
           <li class="tab-menu__btn"><a href="#speedy">Speedy Searching</a></li>
           <li class="tab-menu__btn"><a href="#sharing">Easy Sharing</a></li>
         </ul>
-        <div id="simple">
+        <div id="simple" class="tab-content-wrap">
           <div class="tab-left">
             <img src="images/illustration-features-tab-1.svg" alt="" />
           </div>
           <div class="tab-right">
-            <h3 class="tab__title">Bookmark in one click</h3>
+            <p class="tab__title">Bookmark in one click</p>
             <p class="tab__content">
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
@@ -67,12 +71,12 @@
             <button class="tab__btn">More Info</button>
           </div>
         </div>
-        <div id="speedy">
+        <div id="speedy" class="tab-content-wrap">
           <div class="tab-left">
             <img src="images/illustration-features-tab-2.svg" alt="" />
           </div>
           <div class="tab-right">
-            <h3 class="tab__title">Intelligent search</h3>
+            <p class="tab__title">Intelligent search</p>
             <p class="tab__content">
               Our powerful search feature will help you find saved sites in no
               time at all. No need to trawl through all of your bookmarks.
@@ -80,12 +84,12 @@
             <button class="tab__btn">More Info</button>
           </div>
         </div>
-        <div id="sharing">
+        <div id="sharing" class="tab-content-wrap">
           <div class="tab-left">
             <img src="images/illustration-features-tab-3.svg" alt="" />
           </div>
           <div class="tab-right">
-            <h3 class="tab__title">Share your bookmarks</h3>
+            <p class="tab__title">Share your bookmarks</p>
             <p class="tab__content">
               Easily share your bookmarks and collections with others. Create a
               shareable link that you can send at the click of a button.
@@ -96,28 +100,28 @@
       </div>
     </section>
     <section class="download">
-      <h2 class="download__title">Download the extension</h2>
+      <p class="download__title">Download the extension</p>
       <p class="download__text">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.
       </p>
       <div class="install-wrap">
         <div class="install-item down-chrome">
-          <img src="./images/logo-chrome.svg" alt="" />
+          <img class="install__img" src="./images/logo-chrome.svg" alt="" />
           <span class="add">Add to Chrome</span>
           <span class="ver">Minimum version 62</span>
           <img src="./images/bg-dots.svg" alt="" />
           <button class="add-btn">Add & Install Extension</button>
         </div>
         <div class="install-item down-firefox">
-          <img src="./images/logo-firefox.svg" alt="" />
+          <img class="install__img" src="./images/logo-firefox.svg" alt="" />
           <span class="add">Add to Firefox</span>
           <span class="ver">Minimum version 55</span>
           <img src="./images/bg-dots.svg" alt="" />
           <button class="add-btn">Add & Install Extension</button>
         </div>
         <div class="install-item down-opera">
-          <img src="./images/logo-opera.svg" alt="" />
+          <img class="install__img" src="./images/logo-opera.svg" alt="" />
           <span class="add">Add to Opera</span>
           <span class="ver">Minimum version 46</span>
           <img src="./images/bg-dots.svg" alt="" />
@@ -126,14 +130,17 @@
       </div>
     </section>
     <section class="faq">
-      <h2 class="faq__title">Frequently Asked Questions</h2>
+      <p class="faq__title">Frequently Asked Questions</p>
       <p class="faq__text">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
       <ul class="faq__contents">
         <li class="faq__item">
-          <span class="question">What is Bookmark?</span>
+          <span class="question"
+            >What is Bookmark?
+            <img class="ques-img" src="./images/icon-arrow.svg" alt=""
+          /></span>
           <p class="answer">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
@@ -141,7 +148,12 @@
           </p>
         </li>
         <li class="faq__item">
-          <span class="question">How can I request a new browser?</span>
+          <span class="question"
+            >How can I request a new browser?<img
+              class="ques-img"
+              src="./images/icon-arrow.svg"
+              alt=""
+          /></span>
           <p class="answer">
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
@@ -152,7 +164,12 @@
           </p>
         </li>
         <li class="faq__item">
-          <span class="question"> Is there a mobile app?</span>
+          <span class="question">
+            Is there a mobile app?<img
+              class="ques-img"
+              src="./images/icon-arrow.svg"
+              alt=""
+          /></span>
           <p class="answer">
             Sed consectetur quam id neque fermentum accumsan. Praesent luctus
             vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
@@ -161,7 +178,12 @@
           </p>
         </li>
         <li class="faq__item">
-          <span class="question">What about other Chromium browsers?</span>
+          <span class="question"
+            >What about other Chromium browsers?<img
+              class="ques-img"
+              src="./images/icon-arrow.svg"
+              alt=""
+          /></span>
           <p class="answer">
             Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
             mi, at euismod dui. Aliquam vitae neque eget nisl gravida
@@ -169,19 +191,25 @@
           </p>
         </li>
       </ul>
-			<button class="faq__btn">More Info</button>
+      <button class="faq__btn">More Info</button>
     </section>
-		<section class="contact">
-			<p class="contact__sub-title">35,000+ already joined</p>
-			<h2 class="contact__title">Stay up-to-date with what we’re doing</h2>
-			<form class="contact__form">
-				<input type="text" class="contact__input" placeholder="Enter your email address">
-				<input type="submit" class="submit-btn" value="Contact Us">
-			</form>
-		</section>
-		<footer class="foote">
-			<div class="logo">
-				<img src="./images/logo-bookmark.svg" alt="">
+    <section class="contact">
+      <p class="contact__sub-title">35,000+ ALREADY JOINED</p>
+      <p class="contact__title">Stay up-to-date with what we’re doing</p>
+      <form class="contact__form">
+        <input
+          type="text"
+          class="contact__input"
+          placeholder="Enter your email address"
+        />
+        <input type="submit" class="submit-btn" value="Contact Us" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="logo">
+        <img src="./images/logo-bookmark.svg" alt="" />
+      </div>
+      <div class="footer__layout">
 				<div class="footer-menu">
 					<span class="footer-menu__item">FEATURES</span>
 					<span class="footer-menu__item">PRICING</span>
@@ -189,13 +217,13 @@
 				</div>
 				<div class="footer__sns">
 					<button class="sns-icon">
-						<img src="./images/icon-facebook.svg" alt="">
+						<img src="./images/icon-facebook.svg" alt="" />
 					</button>
 					<button class="sns-icon">
-						<img src="./images/icon-twitter.svg" alt="">
+						<img src="./images/icon-twitter.svg" alt="" />
 					</button>
 				</div>
 			</div>
-		</footer>
+    </footer>
   </body>
 </html>
